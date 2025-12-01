@@ -11,7 +11,7 @@ def lambda_handler(event, context):
     # Scan the table
     try:
         response = dynamo_client.scan(TableName=table_name)
-        items = response['Items']
+        items = response['Items'] 
 
         return {
             'statusCode': 200,
