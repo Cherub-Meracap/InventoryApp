@@ -29,7 +29,7 @@ def lambda_handler(event, context):
             'statusCode': 200,
             'body': json.dumps(f"Item with ID {key_value} deleted successfully.")
         }
-    except Exception as e:
+    except Exception as e: 
         print(e)
         return {
             'statusCode': 500,
